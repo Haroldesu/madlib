@@ -4,34 +4,43 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="src/styles.css"/>
 	<title>Madlib</title>
-	<meta charset="UTF-8" />
+	<meta charset="UTF-8"/>
 </head>
 
 <body>
 
 	<h1> Madlibs </h1>
-	<p> Learning to drive </p>
+	<p> A Day in the Park </p>
 <form>
-		
+		<div id="inputs">
 		<label for = "nameLabel"> Name </label> 
-		<input type = "text" id = name>
+		<input type = "text" id = nameword>
 		<p></p>
 		<label for = "animalLabel"> Animal  </label> 
-		<input type = "text" id = animal>
+		<input type = "text" id = animalword>
 		<p></p>
 		<label for = "animal2Label"> Another Animal  </label> 
-		<input type = "text" id = animal2>
+		<input type = "text" id = animalword2>
 		<p></p>
 		<label for = "name2Label"> Another Name  </label> 
-		<input type = "text" id = name2>
+		<input type = "text" id = nameword2>
 		<p></p>
 		<label for = "ColorLabel"> Color  </label> 
-		<input type = "text" id = color>
+		<input type = "text" id = colorword>
 		<p></p>
-		<input type = "submit" id= sumbit>
-</form>
+		<input type = "button" id= submit value= "Submit" />
+		<p>
+		</div>
+</form> 
+<div id="prompt">
+<textarea id="madlibtext" rows="7" cols="50"> </textarea>
+<br>
+<input type="button" value="Reset" id="resetB"/>
+</div>
 
 
+
+<script src="src/index.js"></script>
 </body>
 
 </html>
